@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    
-    <div class="wrapper">
+    <section>
 
-        <div class="stats-container">
-            <div id="moves-count"></div>
-            <div id="time"></div>
+        <div class="wrapper">
+
+            <div class="stats-container">
+                <div id="moves-count"></div>
+                <div id="time"></div>
+            </div>
+    
+            <div class="game-container"></div>
+    
+            <button id="stop" class="hide">Stop Game</button>
+    
+        </div>
+    
+        <div class="controls-container">
+            <p id="result"></p>
+            <button id="start">Start Game</button>
         </div>
 
-        <div class="game-container"></div>
-
-        <button id="stop" class="hide">Stop Game</button>
-
-    </div>
-
-    <div class="controls-container">
-        <p id="result"></p>
-        <button id="start">Start Game</button>
-    </div>
+    </section>
+    
 
 
     <script src="./js/game.js"></script>

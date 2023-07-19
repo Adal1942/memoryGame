@@ -105,9 +105,13 @@ const matrixGenerator = (cardValues, size = 4) => {
             if (!card.classList.contains("matched")) {
                 //Gira o card clicado
                 card.classList.add("flipped");
-                //Se for o primeiro card (!firstCard é inicialmente falso)
+
+                //SE FOR O PRIMEIRO CARD (!firstCard É INICIALMENTE FALSO)
+
                 if(!firstCard){
-                    //Então o card atual irá virar o firstCard
+
+                    //ENTÃO O CARD ATUAL IRÁ VIRAR O firstCard 
+
                     firstCard = card;
                     //O valor atual das cartas se torna o firstCardValue
                     firstCardValue = card.getAttribute("data-card-value");
