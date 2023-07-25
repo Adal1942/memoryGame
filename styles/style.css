@@ -1,15 +1,18 @@
+@font-face {
+    font-family: "Kurale";
+    src: url(../assets/fonts/Kurale-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Kurale', serif;
 }
 
 body, .controls-container{
-    background-color: #f751e9;
-    background-image: url(../assets/img/pngwing.com.png);
-    background-position: top;
-    background-size: cover;
+    background-color: #9d1f23;
+    background-image: url(../assets/img/background.png);
 }
 
 .wrapper{
@@ -40,17 +43,15 @@ body, .controls-container{
 }
 
 .stats-container{
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 1.2em;
-}
-
-.stats-container span{
-    font-weight: 600;
+    font-size: 1.2em;
 }
 
 .image{
-    width: 6em;
-    height: 6em;
+    width: 100%;
+    height: 100%;
 }
 
 .card-before, .card-after{
@@ -140,6 +141,12 @@ button{
 
 @media screen and (max-width: 460px){
     body{
+        font-size: 0.7em;
+    } 
+}
+
+@media screen and (max-width: 375px){
+    body{
         font-size: 0.6em;
-    }
+    } 
 }

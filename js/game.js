@@ -52,7 +52,7 @@ const timeGenerator = () => {
 //For calculating moves 
 const movesCounter = () => {
     movesCount += 1;
-    moves.innerHTML = `<span>Moves:</span>${movesCount}`;    
+    moves.innerHTML = `<span>Movimentos: </span> ${movesCount}`;    
 };
 
 //Pick random objects from the items array
@@ -128,7 +128,7 @@ const matrixGenerator = (cardValues, size = 4) => {
                         winCount += 1;
     
                         if (winCount == Math.floor(cardValues.length / 2)) {
-                            result.innerHTML = `<h2>Você ganhou</h2> <h4>Moves: ${movesCount}</h4>`;
+                            result.innerHTML = `<h2>Você Ganhou</h2> <h4>Movimentos: ${movesCount}</h4>`;
                             stopGame();
                         }
                     } else {
@@ -155,8 +155,9 @@ startButton.addEventListener("click", () => {
     startButton.classList.add("hide");
 
     interval = setInterval(timeGenerator, 1000);
+    seconds = 0, minutes = 0;
 
-    moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
+    moves.innerHTML = `<span>Movimentos:</span> ${movesCount}`;
     initializer();
 });
 
